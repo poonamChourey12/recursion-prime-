@@ -1,0 +1,35 @@
+#include<studio.h>
+Int prime(int,int);
+Int main()
+{
+Int num,check;
+Printf("Enter a number");
+Scanf("%d",&num);
+Check = primeno(num,num/2);
+If (check == 1);
+{
+Printf("%d is a prime number\n",num);
+}
+Else
+{
+Printf("%d is not a prime number\n",num);
+Return 0;
+}
+Int prime no ( int num,inti)
+{
+If(i==1)
+{
+Return 1;
+}
+Else
+{
+If(num% i==0)
+{
+Return 0;
+}
+Else
+{
+Return prime no (num,i-1);
+}
+}
+}
